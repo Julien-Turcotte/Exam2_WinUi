@@ -23,6 +23,11 @@ namespace HalloWinUI.Views
             ViewModel.ChargerMaisons();
         }
 
+        private async void BtnAjouter_Click(object sender, RoutedEventArgs e)
+        {
+            ViewModel.Ajou   
+        }
+
         private async void BtnSupprimer_Click(object sender, RoutedEventArgs e)
         {
             if (ViewModel.MaisonSelectionnee == null)

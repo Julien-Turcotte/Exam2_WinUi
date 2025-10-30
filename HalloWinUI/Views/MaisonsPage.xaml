@@ -9,6 +9,7 @@
     Background="#FFF3DF"
     mc:Ignorable="d">
 
+
     <Grid x:Name="root" Padding="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -17,10 +18,10 @@
         </Grid.RowDefinitions>
 
         <StackPanel Spacing="12">
-            <Button>
+            <Button Click="BtnAjouter_Click">
                 <StackPanel Orientation="Horizontal" Spacing="8">
                     <FontIcon Glyph="&#xE710;" />
-                    <TextBlock VerticalAlignment="Center" Text="Ajouter" />
+                    <TextBlock VerticalAlignment="Center" Text="Ajouter"/>
                 </StackPanel>
             </Button>
         </StackPanel>
@@ -77,6 +78,21 @@
             </StackPanel>
         </Button>
 
-    </Grid>
+        
+        <!-- visible pour le moment mais serait dans un ContentDialog  -->
+        <Border BorderThickness="2" BorderBrush="Black" Width="500">
+            <StackPanel Visibility="Visible" Grid.Row="2" Background="LightGray" Margin="10,10">
+                <TextBlock Text="Ajout d'une adresse" FontSize="16"/>
+                <TextBox PlaceholderText="Une adresse" Width="300" HorizontalAlignment="Left"/>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Ajouter" Click="BtnAjouter_Click" Margin="5,5"/>
+                    <Button Content="annuler" Margin="5,5" Background="AliceBlue"/>
+                </StackPanel>
+                
+            </StackPanel>
+        </Border>
+        
 
+
+    </Grid>
 </Page>
