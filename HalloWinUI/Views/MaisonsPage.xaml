@@ -56,7 +56,7 @@
                                     FontWeight="SemiBold"
                                     Foreground="{x:Bind StatutCouleur, Mode=OneWay}"
                                     Text="{x:Bind StatutTexte, Mode=OneWay}" />
-                                <CheckBox Content="Signaler" IsChecked="{x:Bind EstSignalee}" />
+                                <CheckBox Content="Signaler" IsChecked="{x:Bind EstSignalee, Mode=TwoWay}" />
                             </StackPanel>
                         </StackPanel>
 
