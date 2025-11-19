@@ -18,6 +18,7 @@ namespace HalloWinUI.ViewModels.Pages
                 if (_maisonSelectionnee != value)
                 {
                     _maisonSelectionnee = value;
+                    // binding TwoWay ==> RaisePropertyChanged()
                 }
             }
         }
@@ -56,6 +57,9 @@ namespace HalloWinUI.ViewModels.Pages
 
         public void AjouterMaison(string name)
         {
+            // TODO: T'y étais presque, c'est NouvelleMaison que tu dois ajouter.
+            //          Avec le binding avec le xaml et RaisePropertyChanged dans la prop NouvelleMaison.
+            //          Pas besoin du param. name.
             Maisons.Add(new MaisonViewModel(maison));
         }
     }
